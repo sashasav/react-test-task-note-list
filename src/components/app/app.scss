@@ -1,0 +1,49 @@
+@import './reset.scss';
+
+$background-main: #000000c9;
+$background-secondary: #404356;
+$btn-primary: #5d6eb2;
+$btn-hover: #0075ff;
+$color-main: #fff;
+$font-main: 1.2rem;
+
+body {
+    background-color: $background-main;
+    color: $color-main;
+    font-size: $font-main;
+}
+
+.app {
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: $background-secondary;
+
+    h2 {
+        font-size: $font-main + 0.3;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px $background-main;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: $btn-primary;
+        color: $color-main;
+        border-radius: 3px;
+        -webkit-transition: background-color .5s;
+        -moz-transition: background-color .5s;
+        -o-transition: background-color .5s;
+        transition: background-color .5s;
+        outline: none;
+
+        &:hover {
+            background-color: $btn-hover;
+        }
+    }
+
+    > p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

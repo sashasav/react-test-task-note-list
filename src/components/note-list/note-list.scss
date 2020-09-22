@@ -1,0 +1,30 @@
+$border-color: #fff;
+
+.note-list {
+    &-item {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+
+        > input {
+            margin-right: 10px;
+
+            &[type='checkbox'] {
+                float: left;
+            }
+        }
+
+        > input, button {
+            float: right;
+        }
+    }
+
+    .title {
+        line-height: 1.3rem;
+    }
+
+    button {
+        margin-left: 10px;
+
+    }
+}
